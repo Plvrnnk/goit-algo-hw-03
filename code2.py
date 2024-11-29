@@ -24,5 +24,5 @@ def get_numbers_ticket(min_val, max_val, quantity):
         ticket_list = sorted(ticket_list) # sorting the list
     return ticket_list
 
-ticket = get_numbers_ticket(1, 5000, 5)
+ticket = get_numbers_ticket(1, 50, 5)
 print("Generated ticket:", ticket)
