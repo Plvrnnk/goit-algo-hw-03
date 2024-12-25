@@ -1,6 +1,6 @@
 import re
 
-def normalize_phone(phone_number):
+def normalize_phone(phone_number: str):
     pattern = r'[\D]'
     replacement = ''
     result = re.sub(pattern, replacement, phone_number)
