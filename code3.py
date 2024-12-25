@@ -4,10 +4,12 @@ def normalize_phone(phone_number: str):
     pattern = r'[\D]'
     replacement = ''
     result = re.sub(pattern, replacement, phone_number)
-    code = '+38'
+    code = '38'
     if not result.startswith(code):
         result = result.replace("+", "")
-        result = code + result
+        result = "+" + code + result
+    elif result.startswith(code):
+        result = "+" + result
     return str(result)
 
 
